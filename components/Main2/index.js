@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import HomePage from "../Accordion";
 
 function MyComponent() {
   const [selectedButton, setSelectedButton] = useState("button1");
@@ -229,6 +230,7 @@ bg-opacity-50 text-white"
           </div>
         </div>
       </div>
+      <HomePage/>
     </>
   );
 }

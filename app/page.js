@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 import MyComponent from "@/components/Main2";
@@ -13,5 +14,6 @@ export default function Home() {
    <HorizontalSlider/>
    <Main/>
    <MyComponent/>
+   <Footer/>
   </div>;
 }
