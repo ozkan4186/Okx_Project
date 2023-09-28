@@ -6,7 +6,7 @@ const VideoPlayer = () => {
   return (
     <div className="video-player">
       <video
-        className="second-img"
+        className="second-img w-full h-screen max-w-full inline"
         style={{ visibility: 'visible' }}
         autoPlay
         loop

@@ -20,9 +20,9 @@ const HorizontalSlider = () => {
   };
 
   return (
-    <div className="horizontal-slider h-12 m-auto  " style={sliderStyle}>
-      <Slider {...settings}>
-        <div className="ticker-item">BTC $26.277,10 (+%0,23)</div>
+    <div className="horizontal-slider h-16  " style={sliderStyle}>
+      <Slider {...settings} className="flex align-items-center">
+        <div className="ticker-item  ">BTC $26.277,10 (+%0,23)</div>
         <div className="ticker-item">ETH $1.595,31 (+%0,10)</div>
         <div className="ticker-item">OKB $42,78 (-%0,64)</div>
         <div className="ticker-item">LTC $63,44 (-%0,53)</div>
