@@ -16,7 +16,8 @@ const Navbar = () => {
               lineHeight: "1.4",
             }}
           >
-            Ortalama Kripto <br />  Borsalarından  <br /> Daha Hızlı, Daha <br /> İyi, Daha Güçlü
+            Ortalama Kripto <br /> Borsalarından <br /> Daha Hızlı, Daha <br />{" "}
+            İyi, Daha Güçlü
           </div>
           <div className="flex flex-col items-center lg:flex-row lg:items-center gap-2 mt-4">
             <input
@@ -24,7 +25,7 @@ const Navbar = () => {
               type="text"
               placeholder="E-posta/Telefon"
             />
-            <MyButton className="mt-2 lg:mt-1" />
+            <MyButton className="mt-2 lg:mt-1   " />
           </div>
           <div className="flex items-center flex-wrap justify-center lg:justify-between w-full  mt-4  ">
             <div>

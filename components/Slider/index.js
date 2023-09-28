@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -16,19 +16,46 @@ const HorizontalSlider = () => {
   };
 
   const sliderStyle = {
-    background: "linear-gradient(to right, yellow, green, blue, red)", // Lineer gradienti burada tanımlayın
+    background: "linear-gradient(to right, #E8668A, #F98027, #DA52D6, #F2764F)",
+    textAlign: "center", // Lineer gradienti burada tanımlayın
+  };
+
+  const tickerItemStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100%",
+    textAlign:"center",
+    margin:"10rem"
   };
 
   return (
-    <div className="horizontal-slider h-16  " style={sliderStyle}>
-      <Slider {...settings} className="flex align-items-center">
-        <div className="ticker-item  ">BTC $26.277,10 (+%0,23)</div>
-        <div className="ticker-item">ETH $1.595,31 (+%0,10)</div>
-        <div className="ticker-item">OKB $42,78 (-%0,64)</div>
-        <div className="ticker-item">LTC $63,44 (-%0,53)</div>
-        <div className="ticker-item">XRP $0,50 (-%0,47)</div>
-        <div className="ticker-item">BCH $228,28 (+%6,35)</div>
-        <div className="ticker-item">SOL $18,98 (-%0,23)</div>
+    <div className="horizontal-slider h-16 " style={sliderStyle}>
+      <Slider
+        {...settings}
+        className="flex align-items-center justify-center items-center m-auto"
+      >
+        <div className="ticker-item" style={tickerItemStyle}>
+          BTC $26.277,10 (+%0,23)
+        </div>
+        <div className="ticker-item" style={tickerItemStyle}>
+          ETH $1.595,31 (+%0,10)
+        </div>
+        <div className="ticker-item" style={tickerItemStyle}>
+          OKB $42,78 (-%0,64)
+        </div>
+        <div className="ticker-item" style={tickerItemStyle}>
+          LTC $63,44 (-%0,53)
+        </div>
+        <div className="ticker-item" style={tickerItemStyle}>
+          XRP $0,50 (-%0,47)
+        </div>
+        <div className="ticker-item" style={tickerItemStyle}>
+          BCH $228,28 (+%6,35)
+        </div>
+        <div className="ticker-item" style={tickerItemStyle}>
+          SOL $18,98 (-%0,23)
+        </div>
       </Slider>
     </div>
   );

@@ -1,6 +1,6 @@
-import React from 'react'
-import VideoPlayer from '../VideoPlayer'
-import Image from 'next/image';
+import React from "react";
+import VideoPlayer from "../VideoPlayer";
+import Image from "next/image";
 
 const Main = () => {
   return (
@@ -21,19 +21,9 @@ tracking-normal font-harmony"
 
         <VideoPlayer />
       </div>
-      <div>
-     
-     
-     
-     
-     
-     
-       
-       
-       
-      </div>
+      <div></div>
     </>
   );
-}
+};
 
-export default Main
+export default Main;
