@@ -4,6 +4,7 @@ import { useState } from "react";
 import HomePage from "../Accordion";
 import "../Main2/style.css";
 import ResponsiveText from "../ResponsiveText";
+import ResponsiveVideo from "../ResponsiveVideo";
 
 function MyComponent() {
   const [selectedButton, setSelectedButton] = useState("button1");
@@ -71,7 +72,7 @@ function MyComponent() {
               style={{
                 fontSize: "20px",
                 lineHeight: "32px",
-            
+
                 margin: "2rem",
                 className: "para",
               }}
@@ -86,7 +87,7 @@ function MyComponent() {
               style={{
                 fontSize: "20px",
                 lineHeight: "32px",
-             
+
                 margin: "2rem",
                 className: "para",
               }}
@@ -100,7 +101,7 @@ function MyComponent() {
               style={{
                 fontSize: "20px",
                 lineHeight: "32px",
-        
+
                 margin: "2rem",
                 className: "para",
               }}
@@ -143,35 +144,30 @@ function MyComponent() {
       </div>
       {/* !!! Main 3 Kısmı  */}
       <div className=" text-center">
-        
-        
-        
-        <ResponsiveText/>
-        
-        
-        
-        <div className="w-full m-10">
-          <div className="video-player">
-            <video
-              className="third-pc-animation"
-              autoPlay
-              loop
-              playsInline
-              width={936}
-              height={253}
-              muted
-              style={{ visibility: "visible" }}
-              poster="https://static.okx.com/cdn/assets/imgs/2210/2763D233C494439D.jpg?x-oss-process=image/format,webp"
-            >
-              <source
-                src="https://static.okx.com/cdn/assets/files/2210/D47D930F643E7A00.webm"
-                type="video/webm"
-              />
-              {/* İzleyici tarayıcı videoyu desteklemezse alternatif içerik */}
-              Tarayıcınız videoyu desteklemiyor.
-            </video>
-          </div>
-        </div>
+        <ResponsiveText />
+
+       
+       
+       
+       
+       
+       
+       
+       
+       <ResponsiveVideo/>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
       </div>
       <br /> <br /> <br />
       {/* Main 4 Kısmı  */}
