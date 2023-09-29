@@ -158,7 +158,7 @@ function MyComponent() {
             Birinci sınıf iş ortaklarımızın yardımıyla neden yeni favori kripto
             uygulamamızın biz olduğumuzu öğrenin
           </p>
-          <button className="bg-white  text-black text-lg md:text-xl lg:text-2xl cursor-pointer leading-7 px-6 md:px-9 lg:px-12 py-4 md:py-6 lg:py-8 rounded-full">
+          <button className="bg-white  text-black text-lg md:text-xl lg:text-2xl cursor-pointer leading-7 px-6 md:px-9 lg:px-14 py-4 md:py-6 lg:py-6 rounded-full">
             Keşfet
           </button>
         </div>
@@ -172,17 +172,22 @@ function MyComponent() {
         </div>
       </div>
       {/* Video Kısmı */}
-      <div className="flex gap-10 justify-center flex-wrap mt-40 ">
-        <div className="relative video-content h-96 w-80 ">
+      <div className="flex gap-10 justify-center flex-wrap mt-40 h-screen">
+        <div className="relative video-content h-80 "
+        style={{
+          width:"28rem"
+        }}>
           <video
+            className="video-content"
             controls
             playsInline
-            src="https://static.okx.com/cdn/assets/files/2210/B961D658AE174818.mp4"
             poster="https://static.okx.com/cdn/assets/imgs/2211/30151288EAF5AEE6.jpg?x-oss-process=image/format,webp"
-          >
-            {/* İzleyici tarayıcınız videoyu desteklemiyor ise alternatif içerik */}
-            Tarayıcınız videoyu desteklemiyor.
-          </video>
+          />
+          <source
+            src="https://static.okx.com/cdn/assets/files/2210/B961D658AE174818.mp4"
+            type="video/mp4"
+          />
+
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
             <div className="text-center">
               <h2 className="text-2xl font-bold">
@@ -192,7 +197,10 @@ function MyComponent() {
             </div>
           </div>
         </div>
-        <div className="relative video-content h-96 w-80 ">
+        <div className="relative video-content h-80  "
+        style={{
+          width:"28rem"
+        }}>
           <video
             controls
             playsInline
@@ -215,7 +223,10 @@ bg-opacity-50 text-white"
             </div>
           </div>
         </div>
-        <div className="relative video-content h-96 w-80 ">
+        <div className="relative video-content h-80 "
+        style={{
+          width:"28rem"
+        }}>
           <video
             controls
             playsInline
