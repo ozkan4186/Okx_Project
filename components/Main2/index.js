@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import HomePage from "../Accordion";
+import "../Main2/style.css";
 
 function MyComponent() {
   const [selectedButton, setSelectedButton] = useState("button1");
@@ -12,113 +13,138 @@ function MyComponent() {
 
   return (
     <>
-      <div
-        style={{
-          height: "853px",
-          width: "1248px",
-          fontSize: "14px",
-          lineHeight: "14px",
-          display: "block",
-          padding: "120px 12px 120px 12px",
-          margin: "auto",
-        }}
-      >
-        <div
-          style={{
-            fontSize: "14px",
-            lineHeight: "14px",
-            width: "1224px",
-            height: "614px",
-            display: "flex",
-          }}
-        >
-          <div
-            className=""
+      <div className="flex flex-wrap justify-center gap-20">
+        <div className="mt-40 leading-loose h-96 order-2 lg:order-1">
+          <h2
             style={{
-              height: "611px",
-              fontSize: "14px",
-              lineHeight: "14px",
-              display: "inline",
-              width: "282px",
+              fontSize: "46px",
+              fontWeight: "500",
+              lineHeight: "61px",
+              marginBottom: "16px",
+              margin: "2rem",
             }}
+            className="text-center"
           >
-            {selectedButton === "button1" && (
-              <Image
-                src="https://static.okx.com/cdn/assets/imgs/236/53565E10320B7359.png"
-                alt="Tek Platform, Sınırsız ÖzellikLite"
-                width={500}
-                height={1084}
+            Tek Platform, Sınırsız <br /> <span className="mr-5" >Özellik</span>
+          </h2>
+          <div className="wrapper text-center ">
+            <div className="option text-center ">
+              <input
+                className="input"
+                type="radio"
+                name="btn"
+                value="option1"
+                onClick={() => handleButtonClick("button1")}
               />
-            )}
-            {selectedButton === "button2" && (
-              <Image
-                src="https://static.okx.com/cdn/assets/imgs/237/296C30E044644A8A.png"
-                alt="Tek Platform, Sınırsız ÖzellikWeb3"
-                width={500}
-                height={1084}
-              />
-            )}
-            {selectedButton === "button3" && (
-              <Image
-                src="https://static.okx.com/cdn/assets/imgs/236/B300B5CD7BBEE474.png"
-                alt="Tek Platform, Sınırsız ÖzellikPro"
-                width={500}
-                height={1084}
-              />
-            )}
-          </div>
-          <div
-            style={{
-              display: "block",
-              fontSize: "14px",
-              lineHeight: "14px",
-              height: "467px",
-              width: "510px",
-              margin: "146px 0 0 102px",
-              padding: "0 12px 0 12px",
-              minHeight: "auto",
-              minWidth: "auto",
-            }}
-          >
-            <h2 className="text-2xl font-medium leading-10 h-32 w-96 ">
-              Tek Platform, Sınırsız <br /> Özellik
-            </h2>
-            <div>
-              <button onClick={() => handleButtonClick("button1")}>Lite</button>
-              <button onClick={() => handleButtonClick("button2")}>Web3</button>
-              <button onClick={() => handleButtonClick("button3")}>Pro</button>
+              <div className="btn">
+                <span className="span">Lite</span>
+              </div>
             </div>
-            {selectedButton === "button1" && (
-              <p>
-                Kriptoda yeni misiniz?Hiç sorun değil.Tek dokunuşla <br /> 5 USD
-                değerinde bile kripto satın alabilir ve ilerledikçe
-                becerilerinizi geliştirebilirsiniz
-              </p>
-            )}
-            {selectedButton === "button2" && (
-              <p>
-                Tüm favori zincirlerinizi destekleyen dünyanın en iyi <br /> NFT
-                piyasası,DEX'i ve cüzdanını keşfedin
-              </p>
-            )}
-            {selectedButton === "button3" && (
-              <p>
-                Marjinli ve vadeli işlemler,güçlü API'ler ve al-sat <br />{" "}
-                botları ile hareket halindeyken bir profesyonel gibi <br /> alım
-                satım yapabilirsiniz.{" "}
-              </p>
-            )}
+            <div className="option">
+              <input
+                className="input"
+                type="radio"
+                name="btn"
+                value="option2"
+                onClick={() => handleButtonClick("button2")}
+              />
+              <div className="btn">
+                <span className="span">Web3</span>
+              </div>{" "}
+            </div>
+            <div className="option">
+              <input
+                className="input"
+                type="radio"
+                name="btn"
+                value="option3"
+                onClick={() => handleButtonClick("button3")}
+              />
+              <div className="btn">
+                <span className="span">Pro</span>
+              </div>
+            </div>
           </div>
+          {selectedButton === "button1" && (
+            <p
+              style={{
+                fontSize: "20px",
+                lineHeight: "32px",
+                marginBottom: "16px",
+                margin: "2rem",
+                textAlign: "center",
+              }}
+            >
+              Kriptoda yeni misiniz? Hiç sorun değil. Tek dokunuşla <br /> 5 USD
+              değerinde bile kripto satın alabilir ve ilerledikçe <br />
+              becerilerinizi geliştirebilirsiniz
+            </p>
+          )}
+          {selectedButton === "button2" && (
+            <p
+              style={{
+                fontSize: "20px",
+                lineHeight: "32px",
+                marginBottom: "16px",
+                margin: "2rem",
+              }}
+            >
+              Tüm favori zincirlerinizi destekleyen dünyanın en iyi <br /> NFT
+              piyasası, DEX'i ve cüzdanını keşfedin
+            </p>
+          )}
+          {selectedButton === "button3" && (
+            <p
+              style={{
+                fontSize: "20px",
+                lineHeight: "32px",
+                marginBottom: "16px",
+                margin: "2rem",
+              }}
+            >
+              Marjinli ve vadeli işlemler, güçlü API'ler ve al-sat <br />{" "}
+              botları ile hareket halindeyken bir profesyonel gibi <br /> alım
+              satım yapabilirsiniz.
+            </p>
+          )}
+        </div>
+        <div className=" mt-4">
+          {selectedButton === "button1" && (
+            <Image
+              src="https://static.okx.com/cdn/assets/imgs/236/53565E10320B7359.png"
+              alt="Tek Platform, Sınırsız ÖzellikLite"
+              width={400}
+              height={400}
+            />
+          )}
+          {selectedButton === "button2" && (
+            <Image
+              src="https://static.okx.com/cdn/assets/imgs/237/296C30E044644A8A.png"
+              alt="Tek Platform, Sınırsız ÖzellikWeb3"
+              width={400}
+              height={400}
+            />
+          )}
+          {selectedButton === "button3" && (
+            <Image
+              src="https://static.okx.com/cdn/assets/imgs/236/B300B5CD7BBEE474.png"
+              alt="Tek Platform, Sınırsız ÖzellikPro"
+              width={400}
+              height={400}
+            />
+          )}
         </div>
       </div>
       {/* !!! Main 3 Kısmı  */}
-      <div>
-        <h2>Yolculuğunuzun Her Aşamasında Sizinle</h2>
-        <p>
-          İlk kripto al-sat deneyiminizden ilk NFT işleminize kadar,tüm süreç
-          boyunca size rehberlik edeceğiz
-        </p>
-        <div>
+      <div className=" text-center">
+        <div className="m-40 text-3xl leading-10 ">
+          <h2>Yolculuğunuzun Her Aşamasında Sizinle</h2>
+          <p>
+            İlk kripto al-sat deneyiminizden ilk NFT işleminize kadar,tüm süreç
+            boyunca size rehberlik edeceğiz
+          </p>
+        </div>
+        <div className="w-full m-10">
           <div className="video-player">
             <video
               className="third-pc-animation"
@@ -230,7 +256,7 @@ bg-opacity-50 text-white"
           </div>
         </div>
       </div>
-      <HomePage/>
+      <HomePage />
     </>
   );
 }
