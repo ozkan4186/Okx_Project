@@ -14,6 +14,10 @@
   margin: 2rem;
   
   
+  
+  
+  
+  
  
 }
 
@@ -23,7 +27,7 @@
   position: relative;
   top: 2px;
   left: 2px;
-  text-align: center !important
+  
   
 }
 
@@ -35,7 +39,7 @@
   top: 0;
   appearance: none;
   cursor: pointer;
-    text-align: center !important
+   
 }
 
 .btn {
@@ -60,3 +64,24 @@
 .input:checked + .btn .span {
   color: var(--font-color-light);
 }
+.para{
+  text-align: start;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    margin: auto;
+  }
+  .para{
+    text-align: center;
+  }
+}
+
+
+
+
+
+

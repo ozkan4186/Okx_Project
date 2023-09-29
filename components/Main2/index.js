@@ -14,8 +14,9 @@ function MyComponent() {
   return (
     <>
       <div className="flex flex-wrap justify-center gap-20">
-        <div className="mt-40 leading-loose h-96 order-2 lg:order-1">
+        <div className="mt-20 sm:text-center leading-loose h-96 order-2 lg:order-1">
           <h2
+            className="lg:text-left text-center "
             style={{
               fontSize: "46px",
               fontWeight: "500",
@@ -23,21 +24,20 @@ function MyComponent() {
               marginBottom: "16px",
               margin: "2rem",
             }}
-            className="text-center"
           >
-            Tek Platform, Sınırsız <br /> <span className="mr-5" >Özellik</span>
+            Tek Platform, Sınırsız <br /> Özellik
           </h2>
-          <div className="wrapper text-center ">
-            <div className="option text-center ">
+          <div className="wrapper lg:m-3 m-10 ">
+            <div className="option lg:text-left text-cente ">
               <input
-                className="input"
+                className="input lg:text-left text-cente "
                 type="radio"
                 name="btn"
                 value="option1"
                 onClick={() => handleButtonClick("button1")}
               />
-              <div className="btn">
-                <span className="span">Lite</span>
+              <div className="btn lg:text-left text-cente ">
+                <span className="span lg:text-left text-cente ">Lite</span>
               </div>
             </div>
             <div className="option">
@@ -70,9 +70,9 @@ function MyComponent() {
               style={{
                 fontSize: "20px",
                 lineHeight: "32px",
-                marginBottom: "16px",
+            
                 margin: "2rem",
-                textAlign: "center",
+                className: "para",
               }}
             >
               Kriptoda yeni misiniz? Hiç sorun değil. Tek dokunuşla <br /> 5 USD
@@ -85,8 +85,9 @@ function MyComponent() {
               style={{
                 fontSize: "20px",
                 lineHeight: "32px",
-                marginBottom: "16px",
+             
                 margin: "2rem",
+                className: "para",
               }}
             >
               Tüm favori zincirlerinizi destekleyen dünyanın en iyi <br /> NFT
@@ -98,8 +99,9 @@ function MyComponent() {
               style={{
                 fontSize: "20px",
                 lineHeight: "32px",
-                marginBottom: "16px",
+        
                 margin: "2rem",
+                className: "para",
               }}
             >
               Marjinli ve vadeli işlemler, güçlü API'ler ve al-sat <br />{" "}
@@ -115,6 +117,7 @@ function MyComponent() {
               alt="Tek Platform, Sınırsız ÖzellikLite"
               width={400}
               height={400}
+              className="w-60 lg:w-80"
             />
           )}
           {selectedButton === "button2" && (
@@ -123,6 +126,7 @@ function MyComponent() {
               alt="Tek Platform, Sınırsız ÖzellikWeb3"
               width={400}
               height={400}
+              className="w-60 lg:w-80"
             />
           )}
           {selectedButton === "button3" && (
@@ -131,6 +135,7 @@ function MyComponent() {
               alt="Tek Platform, Sınırsız ÖzellikPro"
               width={400}
               height={400}
+              className="w-60 lg:w-80"
             />
           )}
         </div>
