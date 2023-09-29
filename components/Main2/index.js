@@ -145,53 +145,34 @@ function MyComponent() {
       {/* !!! Main 3 Kısmı  */}
       <div className=" text-center">
         <ResponsiveText />
-
-       
-       
-       
-       
-       
-       
-       
-       
-       <ResponsiveVideo/>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+        <ResponsiveVideo />
       </div>
       <br /> <br /> <br />
       {/* Main 4 Kısmı  */}
-      <div className="flex  justify-between items-center mx-8 ">
-        <div>
-          <h2>OKX nedir?</h2>
-          <p>
-            Birinci sınıf iş ortaklarımızın yardımıyla neden yeni favori kripto{" "}
-            <br />
-            uygulamamızın biz olduğumuzu öğrenin{" "}
+      <div className="flex flex-col main4 md:flex-row justify-center mx-4 md:mx-16 lg:mx-20 h-auto md:h-80 w-full">
+        <div className="md:w-1/2 md:pl-8 ">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4 md:mb-6">
+            OKX nedir?
+          </h2>
+          <p className="text-base md:text-lg lg:text-xl leading-7 mb-6 md:mb-8">
+            Birinci sınıf iş ortaklarımızın yardımıyla neden yeni favori kripto
+            uygulamamızın biz olduğumuzu öğrenin
           </p>
-          <button>Keşfet</button>
+          <button className="bg-white  text-black text-lg md:text-xl lg:text-2xl cursor-pointer leading-7 px-6 md:px-9 lg:px-12 py-4 md:py-6 lg:py-8 rounded-full">
+            Keşfet
+          </button>
         </div>
-        <div className="logo-img">
+        <div className="logo-img md:w-1/2 md:pr-8  order-1 md:order-2">
           <Image
             src="https://static.okx.com/cdn/assets/imgs/2210/DBDC29AD98D75479.png"
             alt="OKX nedir? Birinci sınıf iş ortaklarımızın yardımıyla neden yeni favori kripto uygulamanızın biz olduğumuzu öğrenin."
-            width={374}
-            height={112}
+            width={500}
+            height={500}
           />
         </div>
       </div>
       {/* Video Kısmı */}
-      <div className="flex gap-10 justify-center ">
+      <div className="flex gap-10 justify-center flex-wrap mt-40 ">
         <div className="relative video-content h-96 w-80 ">
           <video
             controls
