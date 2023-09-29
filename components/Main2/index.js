@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import HomePage from "../Accordion";
 import "../Main2/style.css";
+import ResponsiveText from "../ResponsiveText";
 
 function MyComponent() {
   const [selectedButton, setSelectedButton] = useState("button1");
@@ -142,13 +143,13 @@ function MyComponent() {
       </div>
       {/* !!! Main 3 Kısmı  */}
       <div className=" text-center">
-        <div className="m-40 text-3xl leading-10 ">
-          <h2>Yolculuğunuzun Her Aşamasında Sizinle</h2>
-          <p>
-            İlk kripto al-sat deneyiminizden ilk NFT işleminize kadar,tüm süreç
-            boyunca size rehberlik edeceğiz
-          </p>
-        </div>
+        
+        
+        
+        <ResponsiveText/>
+        
+        
+        
         <div className="w-full m-10">
           <div className="video-player">
             <video
