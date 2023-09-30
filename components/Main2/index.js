@@ -175,7 +175,7 @@ function MyComponent() {
       <div className="flex gap-10 justify-center flex-wrap mt-40 h-screen">
         <div className="relative video-content h-80 "
         style={{
-          width:"28rem"
+          width:"22rem"
         }}>
           <video
             className="video-content"
@@ -199,7 +199,7 @@ function MyComponent() {
         </div>
         <div className="relative video-content h-80  "
         style={{
-          width:"28rem"
+          width:"22rem"
         }}>
           <video
             controls
@@ -225,7 +225,7 @@ bg-opacity-50 text-white"
         </div>
         <div className="relative video-content h-80 "
         style={{
-          width:"28rem"
+          width:"22rem"
         }}>
           <video
             controls
