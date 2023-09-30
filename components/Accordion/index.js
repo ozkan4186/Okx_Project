@@ -38,7 +38,7 @@ const ToggleText = ({ initialText, title }) => {
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-center text-5xl font-medium mb-10">
+      <h1 className="text-center md:text-5xl text-xl font-medium mb-10 ">
         Sorularınız mı var?
       </h1>
       <div className="responsive-container">

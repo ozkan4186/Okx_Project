@@ -217,9 +217,9 @@ bg-opacity-50 text-white"
           >
             <div className="text-center">
               <h2 className="text-2xl font-bold">
-                Teknik direktör Pep Guardiola
+                F1 Pilotu Daniel Ricciardo
               </h2>
-              <p>Çılgın futbol formasyonunu açıklıyor</p>
+              <p>"OKX bir yarış arabası mı" diye soruyor </p>
             </div>
           </div>
         </div>
@@ -243,9 +243,9 @@ bg-opacity-50 text-white"
           >
             <div className="text-center">
               <h2 className="text-2xl font-bold">
-                Teknik direktör Pep Guardiola
+                Snowboard Yarışçısı Scotty James
               </h2>
-              <p>Çılgın futbol formasyonunu açıklıyor</p>
+              <p>Tüm aileyi bir araya getiriyor</p>
             </div>
           </div>
         </div>
