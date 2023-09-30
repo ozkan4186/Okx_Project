@@ -92,8 +92,8 @@ function MyComponent() {
                 className: "para",
               }}
             >
-              Tüm favori zincirlerinizi destekleyen dünyanın en iyi <br /> NFT
-              piyasası, DEX'i ve cüzdanını keşfedin
+              Tüm favori zincirlerinizi destekleyen dünyanin en iyi <br /> NFT
+              piyasasi DEXi ve cüzdanini keşfedin
             </p>
           )}
           {selectedButton === "button3" && (
@@ -106,9 +106,9 @@ function MyComponent() {
                 className: "para",
               }}
             >
-              Marjinli ve vadeli işlemler, güçlü API'ler ve al-sat <br />{" "}
-              botları ile hareket halindeyken bir profesyonel gibi <br /> alım
-              satım yapabilirsiniz.
+              Marjinli ve vadeli işlemler güçlü APIler ve alsat <br />
+              botlari ile hareket halindeyken bir profesyonel gibi <br /> alım
+              satim yapabilirsiniz
             </p>
           )}
         </div>
@@ -219,7 +219,7 @@ bg-opacity-50 text-white"
               <h2 className="text-2xl font-bold">
                 F1 Pilotu Daniel Ricciardo
               </h2>
-              <p>"OKX bir yarış arabası mı" diye soruyor </p>
+              <p>OKX bir yariş arabasi mi diye soruyor </p>
             </div>
           </div>
         </div>
