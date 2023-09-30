@@ -9,8 +9,8 @@ import HorizontalSlider from "@/components/Slider";
 
 export default function Home() {
   return <div>
-    <Header/>
-    <Navbar/>
+   <Header/>
+   <Navbar/>
    <HorizontalSlider/>
    <Main/>
    <MyComponent/>
