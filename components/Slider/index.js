@@ -17,7 +17,7 @@ const HorizontalSlider = () => {
 
   const sliderStyle = {
     background: "linear-gradient(to right, #E8668A, #F98027, #DA52D6, #F2764F)",
-    textAlign: "center", // Lineer gradienti burada tanımlayın
+    textAlign: "center", 
   };
 
   const tickerItemStyle = {

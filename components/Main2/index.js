@@ -207,7 +207,7 @@ function MyComponent() {
             src="https://static.okx.com/cdn/assets/files/2210/D583B0A2F58732CD.mp4"
             poster="https://static.okx.com/cdn/assets/imgs/2211/8D4C3E2605F69059.jpg?x-oss-process=image/format,webp"
           >
-            {/* İzleyici tarayıcınız videoyu desteklemiyor ise alternatif içerik */}
+         
             Tarayıcınız videoyu desteklemiyor.
           </video>
 
@@ -233,7 +233,7 @@ bg-opacity-50 text-white"
             src="https://static.okx.com/cdn/assets/files/2210/CCAA7B610D3D33D4.mp4"
             poster="https://static.okx.com/cdn/assets/imgs/2211/EF1304B5D4D9DB3E.jpg?x-oss-process=image/format,webp"
           >
-            {/* İzleyici tarayıcınız videoyu desteklemiyor ise alternatif içerik */}
+           
             Tarayıcınız videoyu desteklemiyor.
           </video>
 

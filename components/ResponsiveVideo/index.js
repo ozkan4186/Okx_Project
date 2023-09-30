@@ -43,7 +43,7 @@ export default function ResponsiveVideo() {
           poster="https://static.okx.com/cdn/assets/imgs/2210/2763D233C494439D.jpg?x-oss-process=image/format,webp"
         >
           <source src={videos[videoIndex]} type="video/webm" />
-          {/* İzleyici tarayıcı videoyu desteklemiyor. */}
+         
           Tarayıcınız videoyu desteklemiyor.
         </video>
       </div>

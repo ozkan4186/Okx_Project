@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
-import Link from "next/link"; // Next.js'de Link bileşenini kullanın
-import Image from "next/image"; // Next.js'de Image bileşenini kullanın
+import Link from "next/link"; 
+import Image from "next/image";
 import { BsGrid3X3GapFill, AiOutlineSearch } from "react-icons/bs";
 import NavLinks from "./Navlinks";
 import HeaderButton from "../HeaderButton";

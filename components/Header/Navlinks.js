@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import Link from "next/link"; // Next.js'de Link bileşenini kullanın
+import Link from "next/link"; 
 import { links } from "./Mylinks";
 
 const NavLinks = () => {

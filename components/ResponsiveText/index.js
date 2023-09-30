@@ -1,4 +1,4 @@
-// components/ResponsiveContent.js
+
 import { useEffect, useState } from "react";
 
 export default function ResponsiveContent() {
@@ -9,14 +9,14 @@ export default function ResponsiveContent() {
       setWindowWidth(window.innerWidth);
     }
 
-    // İlk render'dan sonra ve pencere boyutu değiştiğinde çalışır.
+  
     window.addEventListener("resize", handleResize);
 
-    // İlk render'da pencere genişliğini alın
+    
     setWindowWidth(window.innerWidth);
 
     return () => {
-      // Component unmount olduğunda event listener'ı kaldırın
+     
       window.removeEventListener("resize", handleResize);
     };
   }, []);

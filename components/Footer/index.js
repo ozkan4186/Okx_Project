@@ -7,30 +7,30 @@ const Footer = () => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   useEffect(() => {
-    // Tarayıcının pencere genişliğini izleyen işlev
+   
     const handleWindowResize = () => {
       if (window.innerWidth >= 768) {
-        // Büyük ekranlarda accordionOpen true olarak ayarla
+      
         setAccordionOpen(true);
       } else {
-        // Küçük ekranlarda accordionOpen false olarak ayarla
+     
         setAccordionOpen(false);
       }
     };
 
-    // Sayfa yüklendiğinde pencere boyutunu kontrol et
+ 
     handleWindowResize();
 
-    // Pencere boyutu değiştiğinde yeniden kontrol et
+ 
     window.addEventListener("resize", handleWindowResize);
 
-    // Temizleme işlevi
+    
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
 
-  // Küçük ekranlarda başlık tıklandığında accordion'ı aç veya kapat
+ 
   const toggleAccordion = () => {
     if (window.innerWidth < 768) {
       setAccordionOpen(!accordionOpen);
@@ -178,7 +178,7 @@ AAASUVORK5CYII="
               <Link className="hover:text-white " href="#">
                 Akademi
               </Link>
-              {/* Diğer maddeleri ekleyin */}
+             
             </ul>
           </div>
           <div className="mb-6 w-52 ">
@@ -234,7 +234,7 @@ AAASUVORK5CYII="
               <Link className="hover:text-white " href="#">
                 OKX Toplulukları
               </Link>
-              {/* Diğer maddeleri ekleyin */}
+             
             </ul>
           </div>
           <div className="mb-6 w-52 ">
@@ -278,7 +278,7 @@ AAASUVORK5CYII="
               <Link className="hover:text-white " href="#">
                 XRP Satın Al
               </Link>
-              {/* Diğer maddeleri ekleyin */}
+            
             </ul>
           </div>
           <div className="mb-6 w-52 ">
@@ -369,7 +369,7 @@ AAASUVORK5CYII="
               <Link className="hover:text-white " href="#">
                 XRP fiyatı
               </Link>
-              {/* Diğer maddeleri ekleyin */}
+           
             </ul>
           </div>
           <div className=" w-52 leading-10 ">
