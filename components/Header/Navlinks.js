@@ -11,23 +11,19 @@ const NavLinks = () => {
     <>
       {links.map((link, index) => (
         <div key={index}>
-          <div className="px-3 text-left md:cursor-pointer group">
+          <div className="px-3 text-left  md:cursor-pointer group">
             <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
+              className="py-7 flex  items-center md:pr-0 pr-5 group"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
-                setSubHeading("");
+                setSubHeading("") 
               }}
             >
               {link.name}
               <span className="text-xl md:hidden inline">
-                <ion-icon
-                  name={`${
-                    heading === link.name ? "chevron-up" : "chevron-down"
-                  }`}
-                ></ion-icon>
+                <ion-icon name={`${heading === link.name ? "chevron-up" : "chevron-down" }`} ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+              <span className="text-xl  md:mt-1 md:ml-2  md:block  group-hover:rotate-180 group-hover:-mt-2">
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
@@ -40,7 +36,7 @@ const NavLinks = () => {
                     mt-1 bg-white rotate-45"
                     ></div>
                   </div>
-                  <div className="bg-white p-5 grid grid-cols-3 gap-10">
+                  <div className="bg-white p-5 grid  gap-10">
                     {link.sublinks.map((mysublinks, subIndex) => (
                       <div key={subIndex}>
                         <h1 className="text-lg font-semibold">
