@@ -126,7 +126,7 @@ AAASUVORK5CYII="
               className="text-xl font-semibold mb-2"
               onClick={toggleAccordion}
             >
-              OKX hakkında
+              Ürünler
             </h2>
             <ul
               className={`text-gray-400 ${accordionOpen ? "block" : "hidden"}`}
@@ -186,7 +186,7 @@ AAASUVORK5CYII="
               className="text-xl font-semibold mb-2"
               onClick={toggleAccordion}
             >
-              OKX hakkında
+              Hizmetlerimiz
             </h2>
             <ul
               className={`text-gray-400 ${accordionOpen ? "block" : "hidden"}`}
@@ -242,7 +242,7 @@ AAASUVORK5CYII="
               className="text-xl font-semibold mb-2"
               onClick={toggleAccordion}
             >
-              OKX hakkında
+              Kripto satın alın
             </h2>
             <ul
               className={`text-gray-400 ${accordionOpen ? "block" : "hidden"}`}
@@ -286,7 +286,7 @@ AAASUVORK5CYII="
               className="text-xl font-semibold mb-2"
               onClick={toggleAccordion}
             >
-              OKX hakkında
+              Kripto hesap makinesi
             </h2>
             <ul
               className={`text-gray-400 ${accordionOpen ? "block" : "hidden"}`}
@@ -317,7 +317,7 @@ AAASUVORK5CYII="
               className="text-xl font-semibold mb-2"
               onClick={toggleAccordion}
             >
-              OKX hakkında
+              Al-Sat
             </h2>
             <ul
               className={`text-gray-400 ${accordionOpen ? "block" : "hidden"}`}
