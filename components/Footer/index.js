@@ -41,14 +41,14 @@ const Footer = () => {
     <footer
       style={{
         fontSize: "14px",
-        lineHeight: "30px",
+        lineHeight: "20px",
         height: "1500px",
         width: "100%",
-        padding: "67px 51px 47px 51px",
+        padding: "40px 51px 47px 51px",
         backgroundColor: "#121212",
       }}
     >
-      <div className="mb-40">
+      <div className="mb-10">
         <div>
           <Image
             src="data:image/png;base64,

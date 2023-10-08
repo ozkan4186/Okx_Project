@@ -18,7 +18,26 @@ const ToggleText = ({ initialText, title }) => {
           onClick={toggleText}
           aria-label={isOpen ? "Close text" : "Open text"}
         >
-          {isOpen ? "-" : "+"}
+          {isOpen ? (
+            <span
+              className="bg-white px-4 py-3 pborder text-center text-black   "
+              style={{
+                borderRadius: "50%",
+              }}
+            >
+              -
+            </span>
+          ) : (
+            <span
+              className="bg-black px-4 py-3 border text-center  text-white   "
+              style={{
+                borderRadius: "50%",
+              }}
+            >
+              {" "}
+              +
+            </span>
+          )}
         </button>
       </div>
       <div className={`mt-2 ${isOpen ? "block" : "hidden"}`}>
@@ -38,7 +57,7 @@ const ToggleText = ({ initialText, title }) => {
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-center md:text-5xl text-xl font-medium mb-10 ">
+      <h1 className="text-center md:text-5xl text-xl font-medium mb-4 mt-8 ">
         Sorularınız mı var?
       </h1>
       <div className="responsive-container">

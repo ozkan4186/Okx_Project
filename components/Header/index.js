@@ -27,7 +27,7 @@ const Header = () => {
 
           </div>
         </div>
-        <ul className="md:flex hidden uppercase items-center gap-8  font-[Poppins]">
+        <ul className="md:flex  hidden uppercase items-center gap-8  font-[Poppins]">
           <li>
             <Link href="/" className="py-7 px-3 inline-block">
               Home
@@ -37,7 +37,7 @@ const Header = () => {
         </ul>
 
         <div className="md:block hidden  ">
-          <Link className="m-1" href="#">
+          <Link className="m-3" href="#">
             Giriş Yap
           </Link>
           <HeaderButton />

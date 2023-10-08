@@ -172,7 +172,7 @@ function MyComponent() {
         </div>
       </div>
       {/* Video Kısmı */}
-      <div className="flex gap-10 justify-center flex-wrap mt-40 h-screen">
+      <div className="flex gap-4 justify-center flex-wrap ">
         <div className="relative video-content h-80 "
         style={{
           width:"22rem"
